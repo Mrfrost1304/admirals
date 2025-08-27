@@ -1,0 +1,53 @@
+import React from 'react';
+import { ArrowUp, MessageCircle } from 'lucide-react';
+import image2 from '../assets/image2.png';
+
+export default function GetInTouchSection() {
+  return (
+    <section className="bg-white py-20 px-6 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          {/* Left side - Phone image */}
+          <div className="flex justify-center lg:justify-center relative">
+            <div className="relative">
+              {/* Phone image using your imported image */}
+              <img 
+                src={image2}
+                
+                alt="Admirals mobile app showing Hello screen"
+                className="h-auto "
+              />
+            </div>
+          </div>
+
+          {/* Right side - Content */}
+          <div className="space-y-8 lg:pl-8">
+            <h2 className="text-6xl font-light text-gray-900 leading-tight">
+              Get in touch
+            </h2>
+            
+            <p className="text-xl text-gray-600 leading-relaxed">
+              More questions? Contact us today!
+            </p>
+
+            <div className="pt-2">
+              <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-0.5">
+                CONTACT US
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Scroll to top button - positioned as in original */}
+      <button className="absolute bottom-8 left-8 flex items-center justify-center w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors shadow-lg">
+        <ArrowUp className="w-5 h-5" />
+      </button>
+
+      {/* Live chat button - positioned as in original */}
+      
+
+      {/* Background decorative elements - removed as they don't appear in the reference image */}
+    </section>
+  );
+}
