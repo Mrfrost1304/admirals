@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowUp, MessageCircle, Shield, Briefcase, ArrowRight } from 'lucide-react';
+
+import { ArrowUp, Shield, Briefcase, ArrowRight } from 'lucide-react';
 
 export default function WhyChooseAdmirals() {
   const features = [

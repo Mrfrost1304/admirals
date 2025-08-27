@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { DollarSign, Euro, TrendingUp, Briefcase, FileText, Bitcoin } from 'lucide-react';
 
 export default function TradingInstruments() {

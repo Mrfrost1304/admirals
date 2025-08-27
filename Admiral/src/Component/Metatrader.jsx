@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import { ArrowUp, MessageCircle, Monitor } from 'lucide-react';
 import trade from '../assets/tab-1.webp'
 

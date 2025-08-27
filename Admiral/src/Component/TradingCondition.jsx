@@ -1,4 +1,4 @@
-import React from 'react';
+
 import { ArrowUp, MessageCircle, Check, TrendingUp, TrendingDown } from 'lucide-react';
 
 export default function TradingConditions() {
