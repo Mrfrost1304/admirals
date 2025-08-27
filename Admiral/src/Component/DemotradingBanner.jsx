@@ -1,6 +1,6 @@
-import React from "react";
+
 import { Smile, DollarSign, CreditCard } from "lucide-react";
-import BgImage from "../assets/try-demo.webp"; // update path as needed
+import BgImage from "../assets/try-demo.webp";
 
 export default function DemoTrading() {
   const benefits = [

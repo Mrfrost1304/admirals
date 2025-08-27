@@ -1,56 +1,57 @@
-import React from 'react';
-import { ArrowUp, MessageCircle } from 'lucide-react';
-import blackcir from '../assets/blackcir.png'
+import { ArrowUp } from "lucide-react";
+import blackcir from "../assets/blackcir.png";
+
 export default function CFDTradingHero() {
   return (
-    <div className="relative bg-black min-h-screen overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center min-h-[70vh]">
+    <section className="relative bg-black overflow-hidden min-h-[80vh] flex items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
           
-          {/* Content */}
-          <div className="space-y-8 z-10 relative">
-            <div className="space-y-6">
-              <p className="text-white/80 text-lg font-medium">
-                Great news for traders!
-              </p>
-              
-              <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
-                Trade CFD with 0<br />
-                swap fees
-              </h1>
-            </div>
-            
-            <p className="text-white/70 text-lg lg:text-xl leading-relaxed max-w-2xl">
-              Experience the freedom of trading without swaps on the most sought-after currency pairs, precious metals, and index CFDs! Enjoy a seamless trading experience that allows you to maximise your potential without the burden of overnight fees.*
+          {/* Left side content */}
+          <div className="flex flex-col justify-center space-y-6 text-center lg:text-left">
+            <p className="text-white/80 text-base lg:text-lg font-medium">
+              Great news for traders!
             </p>
-            
-            <div className="pt-4">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-200 transform hover:scale-105 hover:shadow-xl">
+
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight">
+              Trade CFD with 0 <br />
+              swap fees
+            </h1>
+
+            <p className="text-white/70 text-base lg:text-lg leading-relaxed max-w-lg mx-auto lg:mx-0">
+              Experience the freedom of trading without swaps on the most
+              sought-after currency pairs, precious metals, and index CFDs! Enjoy
+              a seamless trading experience that allows you to maximise your
+              potential without the burden of overnight fees.*
+            </p>
+
+            <div>
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md text-base transition-all duration-200">
                 Start Trading
               </button>
             </div>
           </div>
-          
-          <img src={blackcir}></img>
+
+          {/* Right side image */}
+          <div className="flex justify-center lg:justify-end relative">
+            <img
+              src={blackcir}
+              alt="0 Swap Fees"
+              className="h-full w-auto max-h-[75vh] object-contain"
+            />
+            <span className="absolute bottom-2 right-4 text-xs text-white/70">
+              *Terms apply
+            </span>
+          </div>
         </div>
       </div>
-      
+
       {/* Scroll Up Button */}
       <div className="fixed bottom-6 left-6">
         <button className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white rounded-full p-3 transition-all duration-200 transform hover:scale-110">
           <ArrowUp className="w-5 h-5" />
         </button>
       </div>
-      
-     
-      
-      {/* Terms notice */}
-      <div className="absolute bottom-4 right-24 text-white/50 text-sm">
-        *Terms apply
-      </div>
-      
-      {/* Background gradient overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-transparent to-blue-800/10 pointer-events-none"></div>
-    </div>
+    </section>
   );
 }

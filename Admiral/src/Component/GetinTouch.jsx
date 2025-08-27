@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowUp, MessageCircle } from 'lucide-react';
+
+import { MessageCircle } from 'lucide-react';
 import image2 from '../assets/image2.png';
 
 export default function GetInTouchSection() {
@@ -39,13 +39,16 @@ export default function GetInTouchSection() {
         </div>
       </div>
 
-      {/* Scroll to top button - positioned as in original */}
-      <button className="absolute bottom-8 left-8 flex items-center justify-center w-12 h-12 bg-blue-500 hover:bg-blue-600 text-white rounded-full transition-colors shadow-lg">
-        <ArrowUp className="w-5 h-5" />
-      </button>
+      
+      
 
       {/* Live chat button - positioned as in original */}
-      
+      <div className="fixed bottom-6 right-6">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg flex items-center space-x-2 transition-transform hover:scale-110">
+                <MessageCircle className="w-5 h-5" />
+                <span className="text-sm font-medium">Live chat</span>
+              </button>
+            </div>
 
       {/* Background decorative elements - removed as they don't appear in the reference image */}
     </section>

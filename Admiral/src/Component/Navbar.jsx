@@ -3,7 +3,7 @@ import { Globe } from 'lucide-react';
 
 export default function AdmiralsHeader() {
   return (
-    <div className="w-full">
+    <div className="w-full sticky top-0 z-50">
       {/* Risk Warning Banner */}
       <div className="bg-black text-white text-center py-2 px-4 text-sm">
         CFDs are complex instruments and come with a high risk of losing money rapidly due to leverage.

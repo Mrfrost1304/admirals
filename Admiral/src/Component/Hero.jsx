@@ -1,52 +1,51 @@
-import React from "react";
 import { MessageCircle } from "lucide-react";
 import zeroWave from "../assets/zero-wave.png"; // your 0+wave image
 
 export default function CommissionFreeSection() {
   return (
-    <div className="relative bg-[#f4f8fd]">
-      <div className="max-w-6xl mx-auto px-6 lg:px-12 py-16 lg:py-24">
-        <div className="grid lg:grid-cols-2 gap-8 items-center">
+    <section className="relative bg-[#f5f9ff] overflow-hidden min-h-[80vh] flex items-center">
+      <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+        <div className="grid lg:grid-cols-2 gap-12 items-center h-full">
           
-          {/* Left side (big image) */}
-          <div className="flex justify-center lg:justify-start">
+          {/* Left side (big image full height + terms) */}
+          <div className="order-2 lg:order-1 flex flex-col justify-center items-center lg:items-start h-full relative">
             <img
               src={zeroWave}
-              alt="Zero commission"
-              className="w-[420px] lg:w-[500px] h-auto object-contain"
+              alt="Zero commission investing"
+              className="h-full w-auto object-contain max-h-[80vh]"
             />
+           
           </div>
 
           {/* Right side (text + button) */}
-          <div className="space-y-6 text-center lg:text-left">
+          <div className="order-1 lg:order-2 flex flex-col justify-center space-y-6 text-center lg:text-left">
             <h1 className="text-4xl lg:text-5xl font-bold text-gray-900 leading-snug">
               Commission-Free <br />
               Global Stock Markets
             </h1>
 
-            <p className="text-lg text-gray-600 max-w-lg mx-auto lg:mx-0">
-              Invest in a diverse range of stocks and ETFs from the US, EU, and UK markets 
-              without having to worry about commission fees. This means you can maximise 
-              your investment potential while keeping your costs low, allowing you to build 
-              a robust portfolio with ease.*
+            <p className="text-base lg:text-lg text-gray-600 max-w-md mx-auto lg:mx-0">
+              Invest in a diverse range of stocks and ETFs from the US,
+              EU, and UK markets without having to worry about commission
+              fees. This means you can maximise your investment potential
+              while keeping your costs low, allowing you to build a robust
+              portfolio with ease.*
             </p>
 
-            <div>
-              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-4 rounded-lg text-lg transition-all duration-200">
-                Start Investing
-              </button>
-            </div>
+            <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-8 py-3 rounded-md text-base transition-all duration-200">
+              Start Investing
+            </button>
           </div>
         </div>
       </div>
 
-      {/* Floating chat button */}
+      {/* Floating chat button (optional, if needed) */}
       <div className="fixed bottom-6 right-6">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg flex items-center space-x-2 transition-transform hover:scale-110">
+        <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 py-3 shadow-lg flex items-center gap-2 transition-transform duration-200 hover:scale-110">
           <MessageCircle className="w-5 h-5" />
           <span className="text-sm font-medium">Live chat</span>
         </button>
       </div>
-    </div>
+    </section>
   );
 }
