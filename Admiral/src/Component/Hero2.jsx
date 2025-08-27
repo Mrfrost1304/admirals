@@ -39,9 +39,7 @@ export default function CFDTradingHero() {
               alt="0 Swap Fees"
               className="h-full w-auto max-h-[75vh] object-contain"
             />
-            <span className="absolute bottom-2 right-4 text-xs text-white/70">
-              *Terms apply
-            </span>
+            
           </div>
         </div>
       </div>
