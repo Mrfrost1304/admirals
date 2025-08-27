@@ -1,5 +1,6 @@
 
 import { ArrowUp, MessageCircle, Check, TrendingUp, TrendingDown } from 'lucide-react';
+import ScrollButton from './ScrollButton';
 
 export default function TradingConditions() {
   const features = [
@@ -165,11 +166,7 @@ export default function TradingConditions() {
       </div>
       
       {/* Scroll Up Button */}
-      <div className="fixed bottom-6 left-6">
-        <button className="bg-white border border-gray-200 hover:bg-gray-50 text-gray-600 rounded-full p-3 shadow-lg transition-all duration-200 transform hover:scale-110">
-          <ArrowUp className="w-5 h-5" />
-        </button>
-      </div>
+      <ScrollButton></ScrollButton>
       
      
     </div>

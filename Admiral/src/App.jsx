@@ -7,10 +7,11 @@ import MetaTraderShowcase from "./Component/Metatrader"
 import AdmiralsHeader from "./Component/Navbar"
 import TradingConditions from "./Component/TradingCondition"
 import WhyChooseAdmirals from "./Component/Whchoose"
-import image from './assets/image.png'
+
 import AdmiralsFooter from "./Component/Footer1"
 import GetInTouchSection from "./Component/GetinTouch"
 import AdmiralsDisclaimerFooter from "./Component/Footer2"
+
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
    <GetInTouchSection></GetInTouchSection>
    <AdmiralsFooter></AdmiralsFooter>
    <AdmiralsDisclaimerFooter></AdmiralsDisclaimerFooter>
+   
     </>
   )
 }

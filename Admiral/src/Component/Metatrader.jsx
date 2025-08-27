@@ -1,6 +1,8 @@
 
 import { ArrowUp, MessageCircle, Monitor } from 'lucide-react';
 import trade from '../assets/tab-1.webp'
+import ScrollButton from './ScrollButton';
+import { useState } from 'react';
 
 export default function MetaTraderShowcase() {
   const [activeTab, setActiveTab] = useState('Trading');
@@ -12,6 +14,7 @@ export default function MetaTraderShowcase() {
   ];
 
   return (
+
     <div className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24">
         
@@ -63,11 +66,7 @@ export default function MetaTraderShowcase() {
       </div>
       
       {/* Scroll Up Button */}
-      <div className="fixed bottom-6 left-6">
-        <button className="bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white rounded-full p-3 transition-all duration-200 transform hover:scale-110">
-          <ArrowUp className="w-5 h-5" />
-        </button>
-      </div>
+      <ScrollButton></ScrollButton>
       
       
       

@@ -1,6 +1,7 @@
 
 import { MessageCircle } from 'lucide-react';
 import image2 from '../assets/image2.png';
+import ScrollButton from './ScrollButton';
 
 export default function GetInTouchSection() {
   return (
@@ -40,7 +41,7 @@ export default function GetInTouchSection() {
       </div>
 
       
-      
+      <ScrollButton></ScrollButton>
 
       {/* Live chat button - positioned as in original */}
       <div className="fixed bottom-6 right-6">
