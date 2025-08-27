@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowUp, MessageCircle } from 'lucide-react';
-
+import blackcir from '../assets/blackcir.png'
 export default function CFDTradingHero() {
   return (
     <div className="relative bg-black min-h-screen overflow-hidden">
@@ -31,89 +31,7 @@ export default function CFDTradingHero() {
             </div>
           </div>
           
-          {/* Dynamic Water "0" Graphic */}
-          <div className="relative flex justify-center lg:justify-end">
-            <div className="relative w-96 h-96 lg:w-[500px] lg:h-[500px]">
-              <svg viewBox="0 0 500 500" className="w-full h-full">
-                <defs>
-                  {/* Water texture gradients */}
-                  <radialGradient id="waterGradient" cx="30%" cy="30%">
-                    <stop offset="0%" stopColor="#60a5fa" />
-                    <stop offset="40%" stopColor="#3b82f6" />
-                    <stop offset="80%" stopColor="#1e40af" />
-                    <stop offset="100%" stopColor="#1e3a8a" />
-                  </radialGradient>
-                  
-                  <radialGradient id="innerWater" cx="50%" cy="40%">
-                    <stop offset="0%" stopColor="#93c5fd" />
-                    <stop offset="50%" stopColor="#60a5fa" />
-                    <stop offset="100%" stopColor="#3b82f6" />
-                  </radialGradient>
-                  
-                  {/* Wave animation filter */}
-                  <filter id="wave" x="-20%" y="-20%" width="140%" height="140%">
-                    <feTurbulence baseFrequency="0.02" numOctaves="3" result="noise"/>
-                    <feDisplacementMap in="SourceGraphic" in2="noise" scale="8"/>
-                  </filter>
-                </defs>
-                
-                {/* Main "0" water shape */}
-                <path
-                  d="M250 60 C350 60 430 140 430 240 C430 340 350 420 250 420 C150 420 70 340 70 240 C70 140 150 60 250 60 Z M250 150 C200 150 160 190 160 240 C160 290 200 330 250 330 C300 330 340 290 340 240 C340 190 300 150 250 150 Z"
-                  fill="url(#waterGradient)"
-                  filter="url(#wave)"
-                  className="animate-pulse"
-                />
-                
-                {/* Inner water flow */}
-                <circle
-                  cx="250"
-                  cy="240"
-                  r="85"
-                  fill="url(#innerWater)"
-                  opacity="0.8"
-                  className="animate-spin"
-                  style={{ animationDuration: '20s' }}
-                />
-                
-                {/* Water splash effects */}
-                <g opacity="0.7">
-                  <path
-                    d="M150 320 Q180 300 210 320 Q240 340 270 320 Q300 300 330 320 Q360 340 390 320"
-                    stroke="#60a5fa"
-                    strokeWidth="3"
-                    fill="none"
-                    className="animate-pulse"
-                  />
-                  <path
-                    d="M120 350 Q150 330 180 350 Q210 370 240 350 Q270 330 300 350 Q330 370 360 350"
-                    stroke="#3b82f6"
-                    strokeWidth="2"
-                    fill="none"
-                    opacity="0.6"
-                    className="animate-pulse"
-                    style={{ animationDelay: '1s' }}
-                  />
-                </g>
-                
-                {/* Floating water droplets */}
-                <circle cx="380" cy="150" r="6" fill="#60a5fa" opacity="0.7" className="animate-bounce"/>
-                <circle cx="120" cy="200" r="4" fill="#3b82f6" opacity="0.5" className="animate-bounce" style={{ animationDelay: '0.5s' }}/>
-                <circle cx="400" cy="280" r="5" fill="#93c5fd" opacity="0.6" className="animate-bounce" style={{ animationDelay: '1.5s' }}/>
-                <circle cx="100" cy="320" r="3" fill="#60a5fa" opacity="0.4" className="animate-bounce" style={{ animationDelay: '2s' }}/>
-                
-                {/* Dynamic wave lines */}
-                <path
-                  d="M80 380 Q150 360 220 380 Q290 400 360 380 Q430 360 500 380"
-                  stroke="url(#waterGradient)"
-                  strokeWidth="4"
-                  fill="none"
-                  opacity="0.5"
-                  className="animate-pulse"
-                />
-              </svg>
-            </div>
-          </div>
+          <img src={blackcir}></img>
         </div>
       </div>
       

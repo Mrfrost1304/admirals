@@ -24,7 +24,7 @@ function App() {
     <MetaTraderShowcase></MetaTraderShowcase>
     <TradingConditions></TradingConditions>
     <WhyChooseAdmirals></WhyChooseAdmirals>
-   <img src={image} ></img>
+   <DemoTradingBanner></DemoTradingBanner>
    <GetInTouchSection></GetInTouchSection>
    <AdmiralsFooter></AdmiralsFooter>
     </>
