@@ -180,13 +180,8 @@ export default function AdmiralsFooter() {
         </div>
       </div>
 
-      {/* Scroll to Top button */}
-      <button
-        onClick={scrollToTop}
-        className="absolute bottom-6 right-6 bg-blue-600 hover:bg-blue-700 text-white rounded-full p-3 shadow-lg transition-transform hover:scale-110"
-      >
-        <ArrowUp className="w-5 h-5" />
-      </button>
+     
+     
     </footer>
   );
 }
