@@ -39,13 +39,7 @@ export default function CommissionFreeSection() {
         </div>
       </div>
 
-      {/* Floating chat button (optional, if needed) */}
-      <div className="fixed bottom-6 right-6 z-10">
-        <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full px-5 py-3 shadow-lg flex items-center gap-2 transition-transform duration-200 hover:scale-110">
-          <MessageCircle className="w-5 h-5" />
-          <span className="text-sm font-medium">Live chat</span>
-        </button>
-      </div>
+   
     </section>
   );
 }

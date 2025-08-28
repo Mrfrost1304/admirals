@@ -11,6 +11,8 @@ import WhyChooseAdmirals from "./Component/Whchoose"
 import AdmiralsFooter from "./Component/Footer1"
 import GetInTouchSection from "./Component/GetinTouch"
 import AdmiralsDisclaimerFooter from "./Component/Footer2"
+import LiveChatButton from "./Component/LivechatComponent"
+import ScrollButton from "./Component/ScrollButton"
 
 
 function App() {
@@ -30,7 +32,8 @@ function App() {
    <GetInTouchSection></GetInTouchSection>
    <AdmiralsFooter></AdmiralsFooter>
    <AdmiralsDisclaimerFooter></AdmiralsDisclaimerFooter>
-   
+   <LiveChatButton></LiveChatButton>
+   <ScrollButton></ScrollButton>
     </>
   )
 }

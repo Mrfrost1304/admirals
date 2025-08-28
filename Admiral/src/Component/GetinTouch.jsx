@@ -1,5 +1,5 @@
 
-import { MessageCircle } from 'lucide-react';
+
 import image2 from '../assets/image2.png';
 import ScrollButton from './ScrollButton';
 
@@ -41,11 +41,9 @@ export default function GetInTouchSection() {
       </div>
 
       
-      <ScrollButton></ScrollButton>
+      
 
-      {/* Live chat button - positioned as in original */}
      
-      {/* Background decorative elements - removed as they don't appear in the reference image */}
     </section>
   );
 }
