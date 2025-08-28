@@ -44,13 +44,7 @@ export default function GetInTouchSection() {
       <ScrollButton></ScrollButton>
 
       {/* Live chat button - positioned as in original */}
-      <div className="fixed bottom-6 right-6">
-              <button className="bg-blue-600 hover:bg-blue-700 text-white rounded-full p-4 shadow-lg flex items-center space-x-2 transition-transform hover:scale-110">
-                <MessageCircle className="w-5 h-5" />
-                <span className="text-sm font-medium">Live chat</span>
-              </button>
-            </div>
-
+     
       {/* Background decorative elements - removed as they don't appear in the reference image */}
     </section>
   );
